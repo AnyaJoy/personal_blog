@@ -1,27 +1,75 @@
-# Next.js + Tailwind CSS Example
+https://personal-blog-three-rouge.vercel.app
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.2)](https://tailwindcss.com/blog/tailwindcss-v3-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+# Blog - Live with Joy
 
-## Deploy your own
+Live with Joy is a web application created for posting articles, collecting comments and filtering posts. 
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+The application was created with an agenda to have an independent platform for personal blogging.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+## Table of contents
 
-## How to use
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+## Overview
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-```
+### The challenge
 
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+Users should be able to:
 
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
+- View the optimal layout depending on their device's screen size (desktop only)
+- View a feed of posts in random order
+- Filter posts by tags
+- View most recent posts from Home page
+- View related posts from post pafe
+- View preview of posts on Home page
+- View and comment full posts on it's route
+- View About and Contact pages
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+### Screenshot
+
+![](./screens/Screenshot_1.png)
+
+![](./screens/Screenshot_2.png)
+
+![](./screens/Screenshot_3.png)
+
+## Our process
+
+### Built with
+
+- CSS/HTML/JavaScript
+- NextJs
+- Tailwind
+- GraphCMS
+
+### What I learned
+
+- NextJs
+- Tailwind
+- GraphCMS
+
+### Continued development
+
+In the future we would like to add features as:
+
+- Loader
+- Views count
+- Maps for travel posts
+- Mobile layout
+- Auto-filled name for comments (local storage)
+
+## Author
+
+Anya Joy - @AnyaJoy
+
+## Acknowledgments
+
+This application was created with help of JavaScript Mastery youtube tutorial. And my love-hate relationship with Instagram :)
