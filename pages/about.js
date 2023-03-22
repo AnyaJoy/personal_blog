@@ -26,7 +26,7 @@ export default function About() {
             <p className='pb-3'>
               But for now.
               <br />
-              I'm {Math.floor((new Date() - new Date("08-11-1997").getTime()) / 3.15576e+10)}. Born in Ukraine, raised in Russia and currently living my best life in Israel.
+              I'm NaN y.o. Born in Ukraine, raised in Russia and currently living my best life in Israel.
             </p>
             <p>
               I used to be an acrobat and a nursery teacher. And I'm clearly trying to live 20 lives in 1... Now programming, traveling and looking for a way to make a change.
