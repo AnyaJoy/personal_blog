@@ -22,7 +22,7 @@ export default function Home({ posts }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className='grid grid-cols-1 lg:grid-cols-12 gap-12 pb-20 border-b w-full  border-lightBrown py-6'>
-        <div className='lg:col-span-5 col-span-1'>
+        <div className='lg:col-span-5 col-span-1 w-fit mx-auto'>
           <Image
             src={serendipity}
             alt="Midjourney representation of my soul"
@@ -41,10 +41,10 @@ export default function Home({ posts }) {
           
       </div>
       <div className='grid grid-cols-1 lg:grid-cols-12 gap-12 my-10'>
-        <div className='lg:col-span-8 col-span-2 bg-gray-400'>
+        <div className='lg:col-span-8 bg-gray-400'>
           {shufflePosts(posts).map((post, index) => (<PostCard post={post.node} key={post.title}/> ))}
         </div>
-        <div className='lg:col-span-4 col-span-1 bg-red-400'>
+        <div className='lg:col-span-4 border-black'>
           <div className='lg:sticky relative top-8'>
             <PostWidget />
             <Tags />
