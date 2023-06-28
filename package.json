@@ -10,7 +10,7 @@
   "dependencies": {
     "graphql": "^16.6.0",
     "graphql-request": "^5.1.0",
-    "html-react-parser": "^3.0.8",
+    "html-react-parser": "^4.0.0",
     "moment": "^2.29.4",
     "next": "latest",
     "postcss": "^8.4.21",

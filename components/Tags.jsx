@@ -14,7 +14,7 @@ export default function Tags() {
   return (
     <div className="bg-white shadow-lg rounded-lg p-8 mb-8 pb-12">
       <h3 className="text-xl mb-8 font-semibold border-b pb-4 border-lightBrown">
-        Tags
+        All tags
       </h3>
       {tags.map(tag => (
         <Link key={tag.slug} href={`/tag/${tag.slug}`}>

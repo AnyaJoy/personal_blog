@@ -14,7 +14,7 @@ export default function PostCard({ post }) {
                 alt={post.title}
                 className="h-40 shadow-lg rounded-t-lg rounded-lg opacity-20 hover:opacity-100 transition duration-700 overflow:hidden"
               />
-              <p className="title text-brown m-1 text-center absolute">{post.title}</p>
+              <p className="title text-brown m-2 text-center absolute">{post.title}</p>
             </div>
           </div>
           <div className="lg:col-span-4 col-span-1 bg-brown-300 ">
