@@ -8,13 +8,13 @@ export default function PostCard({ post }) {
       <Link href={`/post/${post.slug}`}>
         <div className="grid grid-cols-1 lg:grid-cols-6 gap-6">
           <div className="lg:col-span-2 col-span-1">
-            <div className="flex items-center justify-center h-40 relative">
+            <div className="flex items-center justify-center h-40 relative w-fit m-auto">
               <img
                 src={post.featuredImage.url}
                 alt={post.title}
-                className="absolute h-40 shadow-lg rounded-t-lg rounded-lg opacity-20 hover:opacity-100 transition duration-700 overflow:hidden"
+                className="h-40 shadow-lg rounded-t-lg rounded-lg opacity-20 hover:opacity-100 transition duration-700 overflow:hidden"
               />
-              <p className="title text-brown">{post.title}</p>
+              <p className="title text-brown m-1 text-center absolute">{post.title}</p>
             </div>
           </div>
           <div className="lg:col-span-4 col-span-1 bg-brown-300 ">

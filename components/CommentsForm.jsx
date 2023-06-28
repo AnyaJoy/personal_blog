@@ -40,6 +40,9 @@ function CommentsForm({ slug }) {
     submitComment(commentObj)
     .then((res) => {
       setShowSuccessMessage(true);
+      commentElem.current.value = '';
+      nameElem.current.value = '';
+      emailElem.current.value = ''
       setTimeout(() => {
         setShowSuccessMessage(false)
       }, 3000)
@@ -47,51 +50,58 @@ function CommentsForm({ slug }) {
   }
 
   return (
-    <div className='bg-white shadow-lg rounded-lg p-8 pb-12 mb-8'>
-      <h3 className='text-xl mb-8 font-semibold border-b pb-4'>Thoughts?</h3>
-      <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4'>
-        <input 
-          type="text" 
-          ref={nameElem} 
+    <div className="bg-white shadow-lg rounded-lg p-8 pb-12 mb-8">
+      <h3 className="text-xl mb-8 font-semibold border-b pb-4">Thoughts?</h3>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
+        <input
+          type="text"
+          ref={nameElem}
           className="px-4 p-2 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-grey"
-          placeholder='Name'
+          placeholder="Name"
           name="nameElem"
         />
-        <input 
-          type="text" 
-          ref={emailElem} 
+        <input
+          type="text"
+          ref={emailElem}
           className="px-4 p-2 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-grey"
-          placeholder='Email'
+          placeholder="Email"
           name="emailElem"
         />
       </div>
-      <div className='grid grid-cols-1 gap-4 mb-4'>
-        <textarea 
-          ref={commentElem} 
+      <div className="grid grid-cols-1 gap-4 mb-4">
+        <textarea
+          ref={commentElem}
           className="p-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-grey"
-          placeholder='Comment'
+          placeholder="Comment"
           name="commentElem"
         />
       </div>
-      <div className='grid grid-cols-1 gap-4 mb-4'>
+      <div className="grid grid-cols-1 gap-4 mb-4">
         <div>
-          <input ref={storeDataElem} type="checkbox" name="storeDataElem" value="true" id='storeDataElem'/>
-          <label className='text-brown ml-2' htmlFor='storeDataElem'>Save my email and name for the next time I comment</label>
+          <input
+            ref={storeDataElem}
+            type="checkbox"
+            name="storeDataElem"
+            value="true"
+            id="storeDataElem"
+          />
+          <label className="text-brown ml-2" htmlFor="storeDataElem">
+            Save my email and name for the next time I comment
+          </label>
         </div>
       </div>
-      {error && <p className='text-xs text-red'>All fields are required</p>}
-      <div className='mt-8'>
-        <button 
-          type="button" 
+      {error && <p className="text-xs text-red">All fields are required</p>}
+      <div className="mt-8 w-fit mx-auto md:mx-0">
+        <button
+          type="button"
           onClick={submit}
-          className="transition duration-500 ease hover:bg-lightBrown rounded-full hover:text-darkBrown inline-block text-brown px-5 p-3 cursor-pointer"
-        >
-          Post comment
-        </button>
-        {showSuccessMessage && <span className='text-xl float-right font-semibold mt-3'>Comment in moderation</span>}
+          className={`comment-button ${showSuccessMessage && "validate"}`}
+        ></button>
       </div>
     </div>
-  )
+  );
 }
 
 export default CommentsForm
+
+// transition duration-500 ease hover:bg-lightBrown rounded-full hover:text-darkBrown inline-block text-brown px-5 p-3 cursor-pointer 
