@@ -12,7 +12,7 @@ export default function PostCard({ post }) {
               <img
                 src={post.featuredImage.url}
                 alt={post.title}
-                className="h-40 shadow-lg rounded-t-lg rounded-lg opacity-20 hover:opacity-100 transition duration-700 overflow:hidden"
+                className="h-40 shadow-lg rounded-t-lg rounded-lg opacity-20 hover:opacity-100 transition duration-700 overflow:hidden z-10"
               />
               <p className="title text-brown m-2 text-center absolute">{post.title}</p>
             </div>
