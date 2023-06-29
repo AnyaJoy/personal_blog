@@ -4,6 +4,7 @@ import React, { Suspense } from "react";
 import { Layout } from "../components";
 import dynamic from "next/dynamic";
 import { lazy } from "react";
+import { Analytics } from '@vercel/analytics/react';
 
 const SuspenseComponent = lazy(() => import("../components/Layout"));
 
@@ -41,6 +42,7 @@ function App({ Component, pageProps }) {
           <Component {...pageProps} />
         </Layout>
       </Suspense>
+      <Analytics />
     </>
   );
 }
