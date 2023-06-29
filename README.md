@@ -24,7 +24,7 @@ The application was created with an agenda to have an independent platform for p
 
 Users should be able to:
 
-- View the optimal layout depending on their device's screen size (desktop only)
+- View the optimal layout depending on their device's screen size
 - View a feed of posts in random order
 - Filter posts by tags
 - View most recent posts from Home page
@@ -41,11 +41,10 @@ Users should be able to:
 
 ![](./screens/Screenshot_3.png)
 
-## Our process
+## My process
 
 ### Built with
 
-- CSS/HTML/JavaScript
 - NextJs
 - Tailwind
 - GraphCMS
@@ -58,13 +57,11 @@ Users should be able to:
 
 ### Continued development
 
-In the future we would like to add features as:
+In the future I would like to add features as:
 
-- Loader
-- Views count
+- Sceleton loader
 - Maps for travel posts
-- Mobile layout
-- Auto-filled name for comments (local storage)
+- Calendar for viewing posts chronologically
 
 ## Author
 
@@ -72,4 +69,4 @@ Anya Joy - @AnyaJoy
 
 ## Acknowledgments
 
-This application was created with help of JavaScript Mastery youtube tutorial. And my love-hate relationship with Instagram :)
+This application was created with help of JavaScript Mastery youtube tutorial.
