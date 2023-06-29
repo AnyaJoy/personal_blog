@@ -1,8 +1,12 @@
 'use client'
 import "../styles/globals.scss";
-import React, { Suspense, useEffect, useState } from "react";
+import React, { Suspense } from "react";
 import { Layout } from "../components";
 import dynamic from "next/dynamic";
+import { lazy } from "react";
+
+const SuspenseComponent = lazy(() => import("../components/Layout"));
+
 
 const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
   ssr: false,

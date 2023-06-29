@@ -3,7 +3,6 @@ import React from 'react';
 const parse = require('html-react-parser');
 
 function PostDetail({ post }) {
-  console.log('POST', post)
   const getContentFragment = (index, text, obj, type) => {
     let modifiedText = text;
 
@@ -21,7 +20,6 @@ function PostDetail({ post }) {
       }
 
       if (obj.href) {
-        // console.log(JSON.parse(obj.href))
         modifiedText = <section className='video-container'>{parse(obj.href)}</section>;
       }
     }

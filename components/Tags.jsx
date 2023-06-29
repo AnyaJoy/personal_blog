@@ -12,15 +12,17 @@ export default function Tags() {
   }, [])
   
   return (
-    <div className="bg-white shadow-lg rounded-lg p-8 mb-8 pb-12">
+    <div className="bg-white shadow-lg rounded-lg p-8 mb-8 pb-12 w-full">
       <h3 className="text-xl mb-8 font-semibold border-b pb-4 border-lightBrown">
         All tags
       </h3>
-      {tags.map(tag => (
-        <Link key={tag.slug} href={`/tag/${tag.slug}`}>
-          <span className="cursor-pointer block pb-3 mb-3 text">{tag.name}</span>
-        </Link>
-      ))}
+      <div className="flex flex-wrap gap-x-3 gap-y-5">
+        {tags.map((tag) => (
+          <Link key={tag.slug} href={`/tag/${tag.slug}`}>
+            <span className="cursor-pointer tag">{tag.name}</span>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }
